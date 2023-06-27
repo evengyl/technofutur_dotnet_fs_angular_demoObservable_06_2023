@@ -1,0 +1,13 @@
+<h1>Liste des pays</h1>
+
+Is Connected : {{isConnect}}
+
+<button (click)="login()">Login</button>
+<button (click)="logout()">Logout</button>
+
+
+<ul *ngIf="isConnect">
+    <li *ngFor="let country of listCountry">
+        {{ country.name.official }}
+    </li>
+</ul>
